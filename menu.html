@@ -56,10 +56,10 @@
 
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a class="nav-link" href="menu.html">Menu</a>
 					</li>
 					<li class="nav-item">
@@ -74,15 +74,14 @@
 	</nav>
 
 	<!-- CAROUSEL -->
-	<div id="home" class="wadahcarousel">
-		<div id="slides" class="carousel slide" data-ride="carousel">
+	<div id="slides" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
 		    <li data-target="#slides" data-slide-to="0" class="active"></li>
 		    <li data-target="#slides" data-slide-to="1"></li>
 		    <li data-target="#slides" data-slide-to="2"></li>
 		  </ol>
 		  <div class="carousel-inner">
-		    <div class="carousel-item active">
+		    <div class="carousel-item active fill" style="background-image:url('img/bg1.jpg')">
 		    	<div class="carousel-caption">
 						<h1 class="display-2 animated bounce">TESTIS</h1>
 						<h3>coba buat template</h3>
@@ -93,10 +92,10 @@
 							HERE TOO
 						</button>
 				</div>
-		     	<img class="d-block w-100" src="img/bg1.jpg" alt="First slide">
+		     
 
 		    </div>
-		    <div class="carousel-item">
+		    <div class="carousel-item fill" style="background-image:url('img/bg2.jpg')">
 		      	<div class="carousel-caption">
 						<h1 class="display-2">TESTIS</h1>
 						<h3>coba buat template</h3>
@@ -107,10 +106,9 @@
 							HERE TOO
 						</button>
 				</div>
-		      	<img class="d-block w-100" src="img/bg2.jpg" alt="Second slide">
 		    </div>
-		    <div class="carousel-item">
-		    	<div class="carousel-caption">
+		    <div class="carousel-item fill" style="background-image:url('img/bg3.jpg')">
+		    	<div class="carousel-caption" >
 						<h1 class="display-2">TESTIS</h1>
 						<h3>coba buat template</h3>
 						<button type="button" class="btn btn-outline-light btn-lg">
@@ -121,7 +119,6 @@
 						</button>
 
 				</div>
-		      	<img class="d-block w-100" src="img/bg3.jpg" alt="Third slide">
 		    </div>
 		  </div>
 		  <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
@@ -133,25 +130,24 @@
 		    <span class="sr-only">Next</span>
 		  </a>
 		</div>
-	</div>
 
 	<!-- CONTENT MENU -->
-	<div class="container-fluid padding text-center">
+	<div class="container-fluid padding text-center mx-auto">
 		<h1 class="diplay-3">MENU</h1>
 
 		<div class="row">
-		<div class="col-sm-12 col-md-4">
-			<a href="#!drink"><img src="img/drink.png"></a>
-		</div>
-		<div class="col-sm-12 col-md-4">
-			<a href="#!snack"><img src="img/snack.png"></a>
-		</div>
-		<div class="col-sm-12 col-md-4">
-			<a href="#!food"><img src="img/food.png"></a>
-		</div>
+			<div class="col-xs-3 col-sm-4">
+				<a href="#!drink"><img class="img-fluid" src="img/drink.png"></a>
+			</div>
+			<div class="col-xs-3 col-sm-4">
+				<a href="#!snack"><img class="img-fluid" src="img/snack.png"></a>
+			</div>
+			<div class="col-xs-3 col-sm-4">
+				<a href="#!food"><img class="img-fluid" src="img/food.png"></a>
+			</div>
 		</div>
 
-		<div ng-view class="card">
+		<div ng-view class="card wadahcard mx-auto">
 			
 		</div>
 	</div>
