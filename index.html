@@ -13,6 +13,8 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 	<script type="text/javascript">
 		$(window).scroll(function(){
@@ -45,7 +47,11 @@
 	  });
 	});
 	</script>
-
+	<script type="text/javascript">
+        $(function() {
+		  AOS.init();
+		});
+  	</script>
 </head>
 <body>
 
@@ -72,7 +78,7 @@
 						<a class="nav-link" href="#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
+						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -89,41 +95,31 @@
 		  <div class="carousel-inner">
 		    <div class="carousel-item active fill" style="background-image:url('img/bg1.jpg')">
 		    	<div class="carousel-caption">
-						<h1 class="display-2 animated infinite bounce">TESTIS</h1>
-						<h3>coba buat template</h3>
-						<button type="button" class="btn btn-outline-light btn-lg">
-							CLICK HERE
-						</button>
-						<button type="button" class="btn btn-primary btn-lg">
-							HERE TOO
-						</button>
+						<h1 class="display-2 animated fadeIn">ENJOY CAFE</h1>
+						<h3>A Cozy Place for Drink and Eat</h3>
+						<a class="btn btn-outline-light btn-lg" href="#menu">
+							Go to Page
+						</a>
 				</div>
 		     
 
 		    </div>
 		    <div class="carousel-item fill" style="background-image:url('img/bg2.jpg')">
 		      	<div class="carousel-caption">
-						<h1 class="display-2">TESTIS</h1>
-						<h3>coba buat template</h3>
-						<button type="button" class="btn btn-outline-light btn-lg">
-							CLICK HERE
-						</button>
-						<button type="button" class="btn btn-primary btn-lg">
-							HERE TOO
-						</button>
+						<h1 class="display-2 animated fadeIn">ENJOY CAFE</h1>
+						<h3>Feels Like at Home</h3>
+						<a class="btn btn-outline-light btn-lg" href="#menu">
+							Go to Page
+						</a>
 				</div>
 		    </div>
 		    <div class="carousel-item fill" style="background-image:url('img/bg3.jpg')">
 		    	<div class="carousel-caption" >
-						<h1 class="display-2">TESTIS</h1>
-						<h3>coba buat template</h3>
-						<button type="button" class="btn btn-outline-light btn-lg">
-							CLICK HERE
-						</button>
-						<button type="button" class="btn btn-primary btn-lg">
-							HERE TOO
-						</button>
-
+						<h1 class="display-2 animated fadeIn">ENJOY CAFE</h1>
+						<h3>Find Inspiration Here</h3>
+						<a class="btn btn-outline-light btn-lg" href="#menu">
+							Go to Page
+						</a>
 				</div>
 		    </div>
 		  </div>
@@ -140,7 +136,7 @@
 
 
 	<!-- drink food view -->
-	<div id="menu" class="container-fluid padding">
+	<div id="menu" class="container-fluid padding" data-aos="fade-right" data-aos-duration="1500">
 		<div class="row reveal">
 			<div class="col-sm-12 col-md-4 text-center">
 				<img class="img-fluid" src="img/drink.png">
@@ -159,7 +155,7 @@
 			</div>			
 			<hr class="my-4">
 			<div class="col-12 text-center padding">
-				<a class="btn btn-primary" href="menu.html">Open Menu</a>
+				<a class="btn btn-outline-dark" href="menu.html">Open Menu</a>
 			</div> 
 		</div>
 	</div>
@@ -167,7 +163,7 @@
 	 <hr class="my-4">
 	<!-- cozy place -->
 
-	<div id="about" class="container-fluid padding">
+	<div id="about" class="container-fluid padding" data-aos="fade-left" data-aos-duration="1500">
 		<div class="row">
 			<div class="col-sm-12 col-md-6">
 				<img class="img-fluid" src="img/cozy.jpg">
@@ -194,7 +190,7 @@
 	</figure>
 
 	<!-- contact -->
-	<div id="contact" class="container-fluid padding">
+	<div id="contact" class="container-fluid padding" data-aos="zoom-out" data-aos-duration="1500">
 		<div class="row text-center padding">
 			<div class="col-12">
 				<h2>Connect With Us</h2>

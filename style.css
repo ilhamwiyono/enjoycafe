@@ -44,6 +44,9 @@ body {
 .carousel-caption{
 	top: 35%;
 }
+.carousel-caption h1{
+  font-size: 500%;
+}
 
 .padding{
 	padding-top: 30px;
@@ -96,3 +99,31 @@ footer{
 }
 
 
+@media (max-width: 894px) {
+  .sosmed a{
+    font-size: 48px;
+    padding: 32px;
+  }
+
+  .carousel-caption{
+    top: 30%;
+  }
+  .carousel-caption h1{
+    font-size: 400%;
+  }
+
+}
+
+@media (max-width: 580px) {
+  .sosmed a{
+    font-size: 32px;
+    padding: 24px;
+  }
+
+  .carousel-caption{
+    top: 25%;
+  }
+  .carousel-caption h1{
+    font-size: 300%;
+  }
+}
